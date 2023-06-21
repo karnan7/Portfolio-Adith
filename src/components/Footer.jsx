@@ -21,10 +21,10 @@ const Footer = () => {
             </Wrap>
         </Links>
         <Socials>
-            <li className='social-logo'><a href="https://www.linkedin.com/in/adith-p-a-90ab581b7/" target='none'><FaLinkedinIn/></a></li>
-            <li className='social-logo'><a href="https://github.com/karnan7" target='none'><FaGithub/></a></li>
-            <li className='social-logo'><a href="https://twitter.com/AKayalad" target='none'><FaTwitter/></a></li>
-            <li className='social-logo'><a href="https://www.youtube.com/channel/UC23JOpS6ox5gZWlNoEC44dg" target='none'><FaYoutube/></a></li>
+            <li className='social-logo'><a href="https://www.linkedin.com/in/adith-p-a-90ab581b7/" target='blank'><FaLinkedinIn/></a></li>
+            <li className='social-logo'><a href="https://github.com/karnan7" target='blank'><FaGithub/></a></li>
+            <li className='social-logo'><a href="https://twitter.com/AKayalad" target='blank'><FaTwitter/></a></li>
+            <li className='social-logo'><a href="https://www.youtube.com/channel/UC23JOpS6ox5gZWlNoEC44dg" target='blank'><FaYoutube/></a></li>
         </Socials>
     </FooterSection>
   )
@@ -34,7 +34,7 @@ export default Footer;
 
 const FooterSection = styled.section`
     background:#061D3B;
-    padding: 1rem 5rem 0rem 5rem;
+    padding: 0rem 5rem 0rem 5rem;
     font-family: 'Roboto', sans-serif;
 `
 const Links = styled.div`
@@ -84,7 +84,7 @@ const Socials = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 1.5rem;
     gap: 1rem;
 
     li{

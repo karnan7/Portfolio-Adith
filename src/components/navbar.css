@@ -141,6 +141,10 @@
 }
 .social{
     display: flex;
+    gap: 20px;
+}
+.period{
+    font-size: 80px;
 }
 
 @media screen and (max-width: 780px){

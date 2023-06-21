@@ -9,24 +9,28 @@ gsap.registerPlugin(ScrollTrigger);
 
 const images = [
   {
-    src:"https://images.unsplash.com/photo-1566204773863-cf63e6d4ab88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1345&q=100",
+    src:"https://i.ibb.co/hYb2Z3c/iphone13.png",
+    link:"https://iphone13prokarnan.netlify.app/",
     title: "iPhone 13 Pro Website",
   },
   {
-    src:"https://images.unsplash.com/photo-1566204773863-cf63e6d4ab88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1345&q=100",
+    src:"https://i.ibb.co/hy8XW5g/Screenshot-2023-06-21-113242.png",
+    link:"https://karnan7.github.io/Sorting-Visualizer/",
     title: "Sorting Visualizer",
   },
   {
-    src:"https://images.unsplash.com/photo-1566204773863-cf63e6d4ab88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1345&q=100",
+    src:"https://i.ibb.co/hMGYJnP/Screenshot-2023-06-21-111925.png",
+    link:"https://disneyplus-e86d7.web.app/",
     title: "Disney-Plus Clone",
   },
   {
     src:"https://images.unsplash.com/photo-1566204773863-cf63e6d4ab88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1345&q=100",
+    link:"https://disneyplus-e86d7.web.app/",
     title: "E-Commerce NextJs",
   },
 ]
 
-function GalleryItem({src, title, index, updateActiveImage}){
+function GalleryItem({src, title, link, index, updateActiveImage}){
 
   const item = useRef(null);
   const onScreen = useOnScreen(item, 0.5);
@@ -43,7 +47,7 @@ function GalleryItem({src, title, index, updateActiveImage}){
       <Item>
         <ItemInfo>
           <h1>{title}</h1>
-          <span>visit</span>
+          <a href={link} target='blank'>Visit</a>
         </ItemInfo>
         <ItemImage className='item-image' style={{backgroundImage: `url(${src})`}} alt=''></ItemImage>
       </Item>
@@ -96,6 +100,7 @@ const Projects = () => {
           index={index}
           src={image.src}
           title={image.title}
+          link={image.link}
           updateActiveImage={handleUpdateActiveImage}
           />
         ))}
@@ -175,7 +180,6 @@ const Item = styled.div`
   height: 100%;
   position: relative;
   will-change: transform;
-  cursor: pointer;
 `
 const ItemInfo = styled.div`
   position: absolute;
@@ -191,6 +195,7 @@ const ItemInfo = styled.div`
   h1{
     line-height: 6vw;
     font-weight: 600;
+    color: #66CD16;
     font-size: 4rem;
     text-shadow: #474747 3px 5px 2px;
 
@@ -198,10 +203,10 @@ const ItemInfo = styled.div`
       font-size:2rem;
     }
   }
-  span{
+  a{
     font-size: 1.4rem;
-    color: #66CD16;
-
+    cursor:pointer;
+    color: #fff;
     @media screen and (max-width:1300px){
       font-size: 1rem;
     }

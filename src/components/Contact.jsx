@@ -196,6 +196,10 @@ const InputContainer = styled.div`
         font-size: 0.8rem;
         font-family:'Poppins', sans-serif;
         padding:1rem;
+
+        @media screen and (max-width:900px){
+            col: 20;
+        }
     }
     .text-area::placeholder{
         font-size: 0.8rem;

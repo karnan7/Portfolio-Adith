@@ -132,6 +132,7 @@ const Gallery = styled.div`
   width: 400%;
   display: flex;
   flex-wrap: nowrap;
+  overflow-x: scroll;
 `
 const Counter = styled.div`
   position: absolute;

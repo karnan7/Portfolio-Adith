@@ -47,6 +47,7 @@ const Wrapper = styled.div`
   position: relative;
   z-index: 2;
   color: #fff;
+  overflow:hidden;
   
   @media screen and (max-width:780px){
     padding: 30px 40px 0px 40px;

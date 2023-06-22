@@ -48,8 +48,7 @@ const Contact = () => {
                          placeholder='Message' 
                          name="message" 
                          className='text-area' 
-                         id="form" 
-                         cols="40"
+                         id="form"                   
                          required />
                     </InputContainer>
                     <Button>Send</Button>
@@ -196,6 +195,7 @@ const InputContainer = styled.div`
         font-size: 0.8rem;
         font-family:'Poppins', sans-serif;
         padding:1rem;
+        width: 100%;
 
         @media screen and (max-width:900px){
             col: 20;

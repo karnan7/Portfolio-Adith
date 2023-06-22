@@ -63,7 +63,7 @@ const Navbar = () => {
           <li ref={el => li3=el}><a onClick={handleClick} href="#contact" data-scroll>Contact</a></li>        
           <div ref={el => li4=el} className='social'>
             <li><a href='https://www.linkedin.com/in/adith-p-a-90ab581b7/' target='blank'>linkedIN</a></li>
-            <li className='period'>.</li>
+            <li className='period'>|</li>
             <li><a href='https://github.com/karnan7' target='blank'> Github</a></li>
           </div>
         </div>

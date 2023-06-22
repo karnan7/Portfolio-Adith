@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import styled from 'styled-components'
-import gsap from "gsap";
+import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import cn from "classnames";
 import useOnScreen from '../hooks/useOnScreen';
@@ -33,7 +33,9 @@ const images = [
 function GalleryItem({src, title, link, index, updateActiveImage}){
 
   const ref = useRef(null);
+
   const onScreen = useOnScreen(ref, 0.5);
+  
   useEffect(() => {
     if(onScreen){
       updateActiveImage(index);
@@ -65,7 +67,8 @@ const Projects = ({ src, index, columnOffset }) => {
 
     setTimeout(() => {
       console.log(triggerRef.current);
-      let sections = gsap.utils.toArray('.item-wrapper')
+      let sections = gsap.utils.toArray('.item-wrapper');
+      
       gsap.to(sections,{
         xPercent: -100 * (sections.length - 1),
         ease: "none",

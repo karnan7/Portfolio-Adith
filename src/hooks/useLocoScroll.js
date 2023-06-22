@@ -6,7 +6,7 @@ import "locomotive-scroll/src/locomotive-scroll.scss"
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function useLocoScroll(start){
+export default function useLocoScroll(start) {
     useEffect(() => {
         if(!start) return;
         let locoScroll = null;
@@ -25,15 +25,15 @@ export default function useLocoScroll(start){
           });
 
         ScrollTrigger.scrollerProxy(scrollEl,{
-            scrollTop(value){
-                if(locoScroll){
+            scrollTop(value) {
+                if(locoScroll) {
                     return arguments.length ? locoScroll.scrollTo(value, 0, 0)
                     : locoScroll.scroll.instance.scroll.y;
                 }
                 return null;
             },
-            scrollLeft(value){
-                if(locoScroll){
+            scrollLeft(value) {
+                if(locoScroll) {
                     return arguments.length ? locoScroll.scrollTo(value, 0, 0)
                     : locoScroll.scroll.instance.scroll.x;
                 }

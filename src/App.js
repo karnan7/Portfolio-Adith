@@ -7,13 +7,11 @@ import SplashScreen from './components/SplashScreen';
 import Projects from './components/Projects';
 import NewHome from './components/NewHome';
 import Contact from './components/Contact';
-import useLocoScroll from './hooks/useLocoScroll';
 import Footer from './components/Footer';
+import useLocoScroll from './hooks/useLocoScroll';
 
 
-
-
-function App() {
+const App = () => {
   const [preloader, setPreloader] = useState(true);
   
   useLocoScroll(!preloader)
@@ -23,13 +21,16 @@ function App() {
   };
 
   return (
-    <div className="App" data-scroll-container>
+    <div className="App">
       {preloader ? (
         <SplashScreen onTransitionComplete={handleTransitionComplete}/>
       ) : (
         <>
           <Navbar/>
-          <div id='main-container'>
+          <div 
+          className="main-container"
+          data-scroll-container
+          id='main-container'>
             <NewHome/>
             <AboutMe/>
             <Projects/>

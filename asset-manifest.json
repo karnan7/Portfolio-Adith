@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-Adith/static/css/main.00bd30db.css",
-    "main.js": "/Portfolio-Adith/static/js/main.14095c7e.js",
+    "main.css": "/Portfolio-Adith/static/css/main.e134f116.css",
+    "main.js": "/Portfolio-Adith/static/js/main.e67881b9.js",
     "static/js/787.c3107b10.chunk.js": "/Portfolio-Adith/static/js/787.c3107b10.chunk.js",
     "static/media/green-flames.mp4": "/Portfolio-Adith/static/media/green-flames.8687a82446671e32569a.mp4",
     "static/media/adith.png": "/Portfolio-Adith/static/media/adith.ed4e9c6010a169f526ef.png",
@@ -9,12 +9,12 @@
     "static/media/indian-flag.png": "/Portfolio-Adith/static/media/indian-flag.e0f24151a90ef5448f37.png",
     "static/media/character 1.svg": "/Portfolio-Adith/static/media/character 1.64cadd01366d2d9d8fd8b89a32c0d5ba.svg",
     "index.html": "/Portfolio-Adith/index.html",
-    "main.00bd30db.css.map": "/Portfolio-Adith/static/css/main.00bd30db.css.map",
-    "main.14095c7e.js.map": "/Portfolio-Adith/static/js/main.14095c7e.js.map",
+    "main.e134f116.css.map": "/Portfolio-Adith/static/css/main.e134f116.css.map",
+    "main.e67881b9.js.map": "/Portfolio-Adith/static/js/main.e67881b9.js.map",
     "787.c3107b10.chunk.js.map": "/Portfolio-Adith/static/js/787.c3107b10.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.00bd30db.css",
-    "static/js/main.14095c7e.js"
+    "static/css/main.e134f116.css",
+    "static/js/main.e67881b9.js"
   ]
 }

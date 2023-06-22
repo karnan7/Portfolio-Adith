@@ -72,9 +72,19 @@ const Wrap = styled.div`
     font-weight:100;
     gap: 2rem;
     align-items: flex-end;
+
+    @media screen and (max-width:600px){
+        flex-direction:column;
+        align-items: center;
+        text-align: center;
+    }
 `
 const Info = styled.ul`
     text-align: end;
+    
+    @media screen and (max-width:600px){
+        text-align: center;
+    }
 `
 const Logo = styled.h1`
     text-transform: uppercase;
@@ -106,10 +116,3 @@ const Socials = styled.div`
         place-content: center;
     }
 `
-
-
-{/* <ul>
-<li><ScrollLink to='home' smooth={true} duration={500}>Home</ScrollLink></li>
-<li><ScrollLink to='about' smooth={true} offset={-50} duration={500}>About</ScrollLink></li>
-<li><ScrollLink to='contact' smooth={true} offset={-50} duration={500}>Contact</ScrollLink></li>
-</ul> */}

@@ -9,11 +9,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const images = [
   {
-    src:"https://i.ibb.co/hYb2Z3c/iphone13.png",
-    link:"https://iphone13prokarnan.netlify.app/",
-    title: "iPhone 13 Pro Website",
-  },
-  {
     src:"https://i.ibb.co/hy8XW5g/Screenshot-2023-06-21-113242.png",
     link:"https://karnan7.github.io/Sorting-Visualizer/",
     title: "Sorting Visualizer",
@@ -24,9 +19,14 @@ const images = [
     title: "Disney-Plus Clone",
   },
   {
-    src:"https://images.unsplash.com/photo-1566204773863-cf63e6d4ab88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1345&q=100",
-    link:"https://disneyplus-e86d7.web.app/",
-    title: "E-Commerce NextJs",
+    src:"https://i.ibb.co/R6HTzHN/iphone13.jpg",
+    link:"https://iphone13prokarnan.netlify.app/",
+    title: "iPhone 13 Pro Website",
+  },
+  {
+    src:"https://i.ibb.co/MBRT3vr/shoppin-cart.jpg",
+    link:"https://karnan7.github.io/shopping-cart/",
+    title: "E-Commerce ReactJS",
   },
 ]
 

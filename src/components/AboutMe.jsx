@@ -35,8 +35,9 @@ const Container = styled.section`
   min-height:100vh;
   video{
     position: absolute;
+    inset:0;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     object-fit: cover;
     z-index: 1;
   }

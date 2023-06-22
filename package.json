@@ -1,5 +1,4 @@
 {
-  "homepage": "http://karnan7.github.io/Portfolio-Adith",
   "name": "karnan-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -16,15 +15,12 @@
     "react-icons": "^4.9.0",
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
-    "react-scroll": "^1.8.9",
     "sass": "^1.63.4",
     "styled-components": "^5.3.8",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -46,8 +42,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^5.0.0"
   }
 }

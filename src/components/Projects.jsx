@@ -116,6 +116,7 @@ const Container = styled.section`
   margin-left: -5vw;
   margin-right: -5vw;
   font-family: 'Roboto', sans-serif;
+  overflow: hidden;
   background: hsla(214, 82%, 19%, 1);
 
   background: linear-gradient(90deg, hsla(214, 82%, 19%, 1) 0%, hsla(203, 87%, 3%, 1) 100%);

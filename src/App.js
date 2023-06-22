@@ -5,7 +5,6 @@ import Navbar from './components/Navbar';
 import AboutMe from './components/AboutMe';
 import SplashScreen from './components/SplashScreen';
 import Projects from './components/Projects';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NewHome from './components/NewHome';
 import Contact from './components/Contact';
 import useLocoScroll from './hooks/useLocoScroll';

@@ -45,8 +45,6 @@ export default function useLocoScroll(start){
             event.preventDefault();
             const target = event.target.getAttribute('href');
             const targetElement = document.querySelector(target);
-            console.log("target", target)
-            console.log("targetElement", targetElement)
             if (targetElement) {
               locoScroll.scrollTo(targetElement);
             }
@@ -56,7 +54,6 @@ export default function useLocoScroll(start){
           navLinks.forEach((link) => {
             link.addEventListener('click', handleNavClick);
           });
-          console.log(navLinks);
         
         const isUpdate = () => {
             if(locoScroll){

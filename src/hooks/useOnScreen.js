@@ -2,20 +2,23 @@ import { useState, useEffect } from "react";
 
 function useOnScreen(ref, threshold) {
   // State and setter for storing whether element is visible
-  const [isIntersecting, setIntersecting] = useState(false);
+  const [isIntersecting, setIsIntersecting] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         // Update our state when observer callback fires
-        setIntersecting(entry?.isIntersecting ?? false);
+        setIsIntersecting(entry?.isIntersecting ?? false);
       },
       {
         rootMargin: "0px",
         threshold,
       }
     );
+    console.log("observer", observer);
+    console.log("Ref", ref);
     const currentRef = ref.current;
+    console.log("currentRef", currentRef);
     if (currentRef) {
       observer.observe(currentRef);
     }

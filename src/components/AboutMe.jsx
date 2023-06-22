@@ -41,6 +41,9 @@ const Container = styled.section`
     object-fit: cover;
     z-index: 1;
   }
+  @media screen and (max-width:780px){
+    min-height:100vh;
+  }
 `
 const Wrapper = styled.div`
   height: 100%;

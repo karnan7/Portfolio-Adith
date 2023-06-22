@@ -36,7 +36,7 @@ const Navbar = () => {
   return (
     <section className='nav' data-scroll-section>
         <div className='nav-wrapper'>
-            <a className='logo' href=''>
+            <a className='logo' href="">
               <span>Karnan .</span>
               <span>developer</span>
             </a>

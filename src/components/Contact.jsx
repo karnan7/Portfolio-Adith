@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import styled from 'styled-components'
 import character from "../assets/character 1.svg"
 import emailjs from '@emailjs/browser';
@@ -60,7 +60,7 @@ const Contact = () => {
                     <p>Thanks for the Message <br/>You will hear from me soon</p>
                 </div>
             ) }
-            <img src={character} className={submit ? "submitted-image" : "image"}/>
+            <img src={character} alt='' className={submit ? "submitted-image" : "image"}/>
         </Form>
     </Container>
   )
@@ -69,7 +69,7 @@ const Contact = () => {
 export default Contact;
 
 const Container = styled.section`
-    height:100vh;
+    min-height:100vh;
     display: flex;
     align-items: center;
     padding: 0px 200px;

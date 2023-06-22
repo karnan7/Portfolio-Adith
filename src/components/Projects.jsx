@@ -32,8 +32,8 @@ const images = [
 
 function GalleryItem({src, title, link, index, updateActiveImage}){
 
-  const item = useRef(null);
-  const onScreen = useOnScreen(item, 0.5);
+  const ref = useRef(null);
+  const onScreen = useOnScreen(ref, 0.5);
   useEffect(() => {
     if(onScreen){
       updateActiveImage(index);
@@ -42,7 +42,7 @@ function GalleryItem({src, title, link, index, updateActiveImage}){
 
   return(
     <ItemWrapper className={cn('item-wrapper', {"is-reveal": onScreen})}
-    ref={item}>
+    ref={ref}>
       <div></div>
       <Item>
         <ItemInfo>
@@ -56,7 +56,7 @@ function GalleryItem({src, title, link, index, updateActiveImage}){
   )
 }
 
-const Projects = () => {
+const Projects = ({ src, index, columnOffset }) => {
 
   const [activeImage, setActiveImage] = useState(1)
   let triggerRef = useRef(null)
@@ -64,6 +64,7 @@ const Projects = () => {
   useEffect(() => {
 
     setTimeout(() => {
+      console.log(triggerRef.current);
       let sections = gsap.utils.toArray('.item-wrapper')
       gsap.to(sections,{
         xPercent: -100 * (sections.length - 1),
@@ -112,7 +113,7 @@ const Projects = () => {
 export default Projects;
 
 const Container = styled.section`
-
+  height: 100%;
   margin-left: -5vw;
   margin-right: -5vw;
   font-family: 'Roboto', sans-serif;

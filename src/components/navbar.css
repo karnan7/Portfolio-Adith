@@ -172,4 +172,7 @@
     .social{
         flex-direction: column;
     }
+    .period{
+        display: none;
+    }
 }

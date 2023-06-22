@@ -64,11 +64,11 @@ const Projects = ({ src, index, columnOffset }) => {
   let triggerRef = useRef(null)
 
   useEffect(() => {
-
+    console.log("gsap",gsap.plugins.ScrollTrigger);
     setTimeout(() => {
-      console.log(triggerRef.current);
-      let sections = gsap.utils.toArray('.item-wrapper');
       
+      let sections = gsap.utils.toArray('.item-wrapper');
+
       gsap.to(sections,{
         xPercent: -100 * (sections.length - 1),
         ease: "none",
@@ -77,12 +77,14 @@ const Projects = ({ src, index, columnOffset }) => {
           trigger: triggerRef.current,
           scroller: "#main-container",
           pin: true,
-          scrub: 0.5,
+          scrub: true,
           snap: 1 / (sections.length - 1),
           end: () => `+=${triggerRef.current.offsetWidth}`,
         }
       })
+      
       ScrollTrigger.refresh();
+
     })
   }, [])
   
@@ -120,7 +122,7 @@ const Container = styled.section`
   margin-left: -5vw;
   margin-right: -5vw;
   font-family: 'Roboto', sans-serif;
-  overflow: hidden;
+  // overflow: hidden;
   background: hsla(214, 82%, 19%, 1);
 
   background: linear-gradient(90deg, hsla(214, 82%, 19%, 1) 0%, hsla(203, 87%, 3%, 1) 100%);
@@ -137,7 +139,7 @@ const Gallery = styled.div`
   width: 400%;
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: scroll;
+  // overflow-x: scroll;
 `
 const Counter = styled.div`
   position: absolute;

@@ -9,6 +9,7 @@ import NewHome from './components/NewHome';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import useLocoScroll from './hooks/useLocoScroll';
+import Works from './components/Works';
 
 
 const App = () => {
@@ -33,7 +34,8 @@ const App = () => {
           id='main-container'>
             <NewHome/>
             <AboutMe/>
-            <Projects/>
+            {/* <Projects/> */}
+            <Works/>
             <Contact/>
             <Footer/>
           </div>

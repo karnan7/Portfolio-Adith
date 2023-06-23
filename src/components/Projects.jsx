@@ -97,7 +97,8 @@ const Projects = ({ src, index, columnOffset }) => {
           start: "top top",
           end:() => `+=${triggerRef.current.offsetWidth}`,
           scroller: "#main-container",
-          scrub: true,
+          scrub: 0.5,
+          snap: 1 / (sections.length - 1),
           pin: true,
         }
       })

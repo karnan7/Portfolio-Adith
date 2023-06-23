@@ -33,6 +33,7 @@ export default AboutMe;
 
 const Container = styled.section`
   min-height:100vh;
+  background:#000;
   position:relative;
   video{
     position: absolute;

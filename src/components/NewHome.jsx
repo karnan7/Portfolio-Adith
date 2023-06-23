@@ -187,6 +187,9 @@ const Title = styled.h1`
     letter-spacing:40px;
   }
   @media (max-width: 400px){
-    left: 0%;
+    font-size:60px;
+  }
+  @media (max-width: 360px){
+    left: 1%;
   }
 `

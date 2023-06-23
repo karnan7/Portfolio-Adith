@@ -150,10 +150,11 @@
 @media screen and (max-width: 780px){
     .nav-wrapper{
         padding: 0px 10px;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 70px;
     }
     .nav-menu-text{
-        font-size:.9rem;
+        display: none;
     }
     .nav-btn{
         display: none;

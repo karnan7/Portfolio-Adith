@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import styled from 'styled-components'
-import { gsap } from "gsap";
+import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import cn from "classnames";
 import useOnScreen from '../hooks/useOnScreen';
@@ -61,31 +61,48 @@ function GalleryItem({src, title, link, index, updateActiveImage}){
 const Projects = ({ src, index, columnOffset }) => {
 
   const [activeImage, setActiveImage] = useState(1)
-  let triggerRef = useRef(null)
+  let triggerRef = useRef(null);
+
+  // useEffect(() => {
+  //   console.log("gsap",gsap);
+  //   setTimeout(() => {
+      
+  //     let sections = gsap.utils.toArray('.item-wrapper');
+
+  //     gsap.to(sections,{
+  //       xPercent: -100 * (sections.length - 1),
+  //       ease: "none",
+  //       scrollTrigger : {
+  //         start: "top top",
+  //         trigger: triggerRef.current,
+  //         pin: true,
+  //         scroller: "#main-container",
+  //         scrub: 0.5,
+  //         snap: 1 / (sections.length - 1),
+  //         end: () => `+=${triggerRef.current.offsetWidth}`,
+  //       }
+  //     })
+  //     ScrollTrigger.refresh();
+  //   })
+  // }, [])
 
   useEffect(() => {
-    console.log("gsap",gsap.plugins.ScrollTrigger);
-    setTimeout(() => {
-      
-      let sections = gsap.utils.toArray('.item-wrapper');
-
-      gsap.to(sections,{
+    let sections = gsap.utils.toArray('.item-wrapper');
+    let ctx = gsap.context(() => {
+      gsap.to(sections, {
         xPercent: -100 * (sections.length - 1),
         ease: "none",
-        scrollTrigger : {
-          start: "top top",
+        scrollTrigger: {
           trigger: triggerRef.current,
+          start: "top top",
+          end:() => `+=${triggerRef.current.offsetWidth}`,
           scroller: "#main-container",
-          pin: true,
           scrub: true,
-          snap: 1 / (sections.length - 1),
-          end: () => `+=${triggerRef.current.offsetWidth}`,
+          pin: true,
         }
       })
-      
-      ScrollTrigger.refresh();
-
     })
+    return () => ctx.revert();
   }, [])
   
   const handleUpdateActiveImage = (index) => {
@@ -118,11 +135,9 @@ const Projects = ({ src, index, columnOffset }) => {
 export default Projects;
 
 const Container = styled.section`
-  height: 100%;
   margin-left: -5vw;
   margin-right: -5vw;
   font-family: 'Roboto', sans-serif;
-  // overflow: hidden;
   background: hsla(214, 82%, 19%, 1);
 
   background: linear-gradient(90deg, hsla(214, 82%, 19%, 1) 0%, hsla(203, 87%, 3%, 1) 100%);
@@ -139,7 +154,6 @@ const Gallery = styled.div`
   width: 400%;
   display: flex;
   flex-wrap: nowrap;
-  // overflow-x: scroll;
 `
 const Counter = styled.div`
   position: absolute;

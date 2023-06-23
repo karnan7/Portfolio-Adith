@@ -81,7 +81,7 @@ const AboutTitle = styled.div`
       width:150px;
     }
     @media screen and (max-width:780px){
-      width:90px;
+      width:50px;
     }
     
   }
@@ -98,6 +98,9 @@ const AboutTitle = styled.div`
     }
     @media screen and (max-width:500px){
       font-size:35px;
+    }
+    @media screen and (max-width:400px){
+      font-size:25px;
     }
   }
   .second-line{
@@ -123,5 +126,7 @@ const MyDescription = styled.p`
     font-size:14px;
     line-height:25px;
   }
-
+  @media screen and (max-width:300px){
+    font-size:12px;
+  }
 `

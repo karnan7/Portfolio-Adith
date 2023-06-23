@@ -74,6 +74,7 @@ const Container =styled.section`
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      padding: 10px 40px;
     }
 `
 const Content =styled.div`
@@ -86,6 +87,7 @@ const Content =styled.div`
     }
     @media(max-width:768px){
         grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-gap: 35px;
     }
 `
 const Wrap =styled.div`
@@ -94,6 +96,10 @@ const Wrap =styled.div`
       flex-direction: column;
       align-items: center;
       gap: 20px;
+
+      @media(max-width:768px){
+        gap: 8px;
+      }
     }
 
     img{
@@ -116,5 +122,9 @@ const Wrap =styled.div`
     }
     h2{
         color: white;
+
+        @media(max-width:768px){
+          font-size:1rem;
+        }
     }
 `

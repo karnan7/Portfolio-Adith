@@ -158,9 +158,9 @@
     .nav-btn{
         display: none;
     }
-    /* .nav-btn a{
+    .nav-btn a{
         display: none;
-    } */
+    }
     .menu-screen li a{
         font-size: 3rem;
     }

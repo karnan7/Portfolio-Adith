@@ -9,8 +9,12 @@
 }
 .nav-wrapper{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
 }
 .logo{
     font-family: 'Neucha', sans-serif;
@@ -98,6 +102,7 @@
 .menu-screen{
     position: absolute;
     height: 100vh;
+    width: 100%;
     inset: 0px;
     display: flex;
     flex-direction: column;
@@ -166,6 +171,9 @@
     }
     .menu-screen a:hover{
         font-size: 4rem;
+    }
+    .nav-menu-ham{
+        width: 80px;
     }
 }
 @media screen and (max-width: 600px){

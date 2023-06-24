@@ -123,6 +123,11 @@ const Description = styled.div`
         width:400px;
       }
     }
+    @media (max-width: 500px){
+      p{
+        width:350px;
+      }
+    }
 `
 const Scroll = styled.div`
   margin-top: 50%;
@@ -175,7 +180,7 @@ const Title = styled.h1`
   }
   @media (max-width: 1050px) {
     font-size:110px;
-    left: 5%;
+    left: 7%;
   }
   @media (max-width: 780px) {
     font-size:100px;
@@ -183,11 +188,12 @@ const Title = styled.h1`
     top: 70%;
   }
   @media (max-width: 500px) {
-    font-size:70px;
+    font-size:60px;
     letter-spacing:40px;
   }
   @media (max-width: 400px){
-    font-size:60px;
+    font-size:50px;
+    letter-spacing:35px;
   }
   @media (max-width: 360px){
     left: 1%;

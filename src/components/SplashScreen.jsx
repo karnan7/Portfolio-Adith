@@ -43,6 +43,7 @@ export default SplashScreen;
 
 const Splash = styled.div`
     height: 100vh;
+    width: 100%;
     position: absolute;
     inset: 0;
     background-color: #151617;

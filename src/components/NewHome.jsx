@@ -123,9 +123,9 @@ const Description = styled.div`
         width:400px;
       }
     }
-    @media (max-width: 500px){
+    @media (max-width: 400px){
       p{
-        width:350px;
+        width:300px;
       }
     }
 `
@@ -196,6 +196,6 @@ const Title = styled.h1`
     letter-spacing:35px;
   }
   @media (max-width: 360px){
-    left: 1%;
+    left: 3%;
   }
 `

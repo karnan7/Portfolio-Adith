@@ -167,9 +167,6 @@
     .menu-screen a:hover{
         font-size: 4rem;
     }
-    ::-webkit-scrollbar {
-        display: none;
-      }
 }
 @media screen and (max-width: 600px){
     .menu-screen{

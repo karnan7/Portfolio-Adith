@@ -184,7 +184,6 @@ const Title = styled.h1`
   @media (max-width: 1050px) {
     font-size:110px;
     left: 7%;
-    transform: translate(-50%, -7%);
   }
   @media (max-width: 780px) {
     font-size:100px;

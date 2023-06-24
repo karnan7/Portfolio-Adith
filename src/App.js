@@ -34,7 +34,7 @@ const App = () => {
           id='main-container'>
             <NewHome/>
             <AboutMe/>
-            <Projects/>
+            {/* <Projects/> */}
             <Works/>
             <Contact/>
             <Footer/>

@@ -192,16 +192,24 @@ const Title = styled.h1`
   }
   @media (max-width: 600px) {
     font-size:80px;
+    left: 10%;
   }
   @media (max-width: 500px) {
     font-size:60px;
     letter-spacing:40px;
+    left: 14%;
+  }
+  @media (max-width: 450px) {
+    left: 10%;
   }
   @media (max-width: 400px){
     font-size:52px;
     letter-spacing:35px;
   }
   @media (max-width: 360px){
-    left: 4%;
-    letter-spacing:30px;  }
+    letter-spacing:30px; 
+  }
+  @media (max-width: 330px){
+    left: 5%;
+  }
 `

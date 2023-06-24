@@ -67,6 +67,10 @@ const Container =styled.section`
         font-size:5rem;
         padding: 30px 0px;
         color: #66CD16;
+
+        @media screen and (max-width:900px){
+          font-size: 3rem;
+      }
     }
 
     @media(max-width:768px){

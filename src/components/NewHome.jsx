@@ -190,16 +190,18 @@ const Title = styled.h1`
     letter-spacing:45px;
     top: 70%;
   }
+  @media (max-width: 600px) {
+    font-size:80px;
+  }
   @media (max-width: 500px) {
     font-size:60px;
     letter-spacing:40px;
-    left: 13%;
   }
   @media (max-width: 400px){
     font-size:52px;
     letter-spacing:35px;
   }
   @media (max-width: 360px){
-    left: 5%;
-  }
+    left: 4%;
+    letter-spacing:30px;  }
 `

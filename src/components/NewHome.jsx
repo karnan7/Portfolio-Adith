@@ -124,6 +124,9 @@ const Description = styled.div`
       }
     }
     @media (max-width: 400px){
+      h2{
+        font-size: 30px;
+      }
       p{
         width:300px;
       }
@@ -181,6 +184,7 @@ const Title = styled.h1`
   @media (max-width: 1050px) {
     font-size:110px;
     left: 7%;
+    transform: translate(-50%, -7%);
   }
   @media (max-width: 780px) {
     font-size:100px;
@@ -190,12 +194,13 @@ const Title = styled.h1`
   @media (max-width: 500px) {
     font-size:60px;
     letter-spacing:40px;
+    left: 13%;
   }
   @media (max-width: 400px){
-    font-size:50px;
+    font-size:52px;
     letter-spacing:35px;
   }
   @media (max-width: 360px){
-    left: 3%;
+    left: 5%;
   }
 `

@@ -34,8 +34,8 @@ const App = () => {
           id='main-container'>
             <NewHome/>
             <AboutMe/>
-            {/* <Projects/> */}
-            <Works/>
+            <Projects/>
+            {/* <Works/> */}
             <Contact/>
             <Footer/>
           </div>

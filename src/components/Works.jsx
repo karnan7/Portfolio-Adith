@@ -19,9 +19,9 @@ const images = [
       title: "iPhone 13 Pro Website",
     },
     {
-      src:"https://i.ibb.co/MBRT3vr/shoppin-cart.jpg",
-      link:"https://karnan7.github.io/shopping-cart/",
-      title: "E-Commerce ReactJS",
+      src:"https://i.ibb.co/GpNpcLn/desktop.png",
+      link:"https://dashboard-authentication-seven.vercel.app/",
+      title: "Dashboard with Authentication",
     },
     {
       src:"https://i.ibb.co/bF58MC4/Screenshot-2023-06-23-194920.png",
